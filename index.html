@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>เที่ยวเมืองไทย - Thailand Travel Gallery</title>
+    <!-- นำเข้า Tailwind CSS ผ่าน CDN เพื่อความสะดวกและสวยงาม -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,16 +17,20 @@
 </head>
 <body class="bg-gray-50 text-gray-800">
 
+    <!-- Header / หน้าปก -->
     <header class="bg-blue-600 text-white text-center py-16 px-4 shadow-md bg-cover bg-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1528181304800-26980884e359?auto=format&fit=crop&w=1200&q=80');">
         <h1 class="text-4xl md:text-5xl font-bold mb-4 tracking-wide">Amazing Thailand</h1>
         <p class="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">บันทึกภาพความทรงจำและสถานที่ท่องเที่ยวที่สวยงามทั่วประเทศไทย</p>
     </header>
 
+    <!-- ส่วนเนื้อหาแกลเลอรี -->
     <main class="container mx-auto px-4 py-12">
         <h2 class="text-2xl font-bold mb-8 text-gray-700 border-b-2 border-blue-500 pb-2 inline-block">สถานที่ท่องเที่ยวแนะนำ</h2>
         
+        <!-- Grid แสดงรูปภาพ -->
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             
+            <!-- การ์ดสถานที่ที่ 1 -->
             <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
                 <div class="h-48 overflow-hidden bg-gray-200">
                     <img src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=600&q=80" alt="กรุงเทพมหานคร" class="w-full h-full object-cover">
@@ -37,6 +42,7 @@
                 </div>
             </div>
 
+            <!-- การ์ดสถานที่ที่ 2 -->
             <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
                 <div class="h-48 overflow-hidden bg-gray-200">
                     <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=600&q=80" alt="เชียงใหม่" class="w-full h-full object-cover">
@@ -48,6 +54,7 @@
                 </div>
             </div>
 
+            <!-- การ์ดสถานที่ที่ 3 -->
             <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
                 <div class="h-48 overflow-hidden bg-gray-200">
                     <img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=600&q=80" alt="ภูเก็ต" class="w-full h-full object-cover">
@@ -59,6 +66,7 @@
                 </div>
             </div>
 
+            <!-- การ์ดสถานที่ที่ 4 -->
             <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
                 <div class="h-48 overflow-hidden bg-gray-200">
                     <img src="https://images.unsplash.com/photo-1540206351-d6465b3ac5c1?auto=format&fit=crop&w=600&q=80" alt="สุโขทัย" class="w-full h-full object-cover">
@@ -70,20 +78,22 @@
                 </div>
             </div>
 
+            <!-- การ์ดสถานที่ที่ 5 (เพิ่มจากลิงก์ที่คุณส่งมา) -->
             <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
                 <div class="h-48 overflow-hidden bg-gray-200">
-                    <img src="https://s.isanook.com/tr/0/ud/283/1417415/ahr0chm6ly9zlmlzyw5vb2suy29tl_9.jpg?ip/resize/w728/q80/jpg" alt="สถานที่ท่องเที่ยวใหม่" class="w-full h-full object-cover">
+                    <img src="https://s.isanook.com/tr/0/ud/283/1417415/ahr0chm6ly9zlmlzyw5vb2suy29tl_9.jpg?ip/resize/w728/q80/jpg" alt="อ่าวไร่เลย์ กระบี่" class="w-full h-full object-cover">
                 </div>
                 <div class="p-4">
                     <span class="text-xs font-semibold text-teal-600 uppercase tracking-wider">ภาคใต้</span>
-                    <h3 class="text-lg font-bold mt-1 text-gray-900">เกาะหลีเป๊ะ, สตูล</h3>
-                    <p class="text-sm text-gray-600 mt-1">มัลดีฟส์เมืองไทย น้ำทะเลสีครามใสแจ๋วและปะการังอันสมบูรณ์</p>
+                    <h3 class="text-lg font-bold mt-1 text-gray-900">อ่าวไร่เลย์, กระบี่</h3>
+                    <p class="text-sm text-gray-600 mt-1">สวรรค์ของนักปีนผาและคนรักทะเล รายล้อมด้วยภูเขาหินปูนและหาดทรายขาวละเอียด</p>
                 </div>
             </div>
 
         </div>
     </main>
 
+    <!-- Footer / ท้ายเว็บ -->
     <footer class="bg-gray-900 text-gray-400 text-center py-6 mt-12 border-t border-gray-800">
         <p class="text-sm">© 2026 Thailand Travel Gallery. สร้างด้วยความรักในเมืองไทย</p>
     </footer>
